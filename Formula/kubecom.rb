@@ -6,12 +6,12 @@ class Kubecom < Formula
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/<repo_owner>/<repo_name>/releases/download/0.5.5-rc.2/kubecom_0.5.5-rc.2_darwin_amd64.tar.gz", :using => CurlDownloadStrategy.
-    sha256 "f9bb25d27360eb59bf129c13fae8a73a3545067198305e7d74cddc4aabc62179"
+    url "https://github.com/<repo_owner>/<repo_name>/releases/download/0.5.5-rc.2/kubecom_0.5.5-rc.2_darwin_amd64.tar.gz"
+    sha256 "3a7ba817a11b03348c3a1142eede7720253e5644db3a93d43f90f6300896c3c5"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/<repo_owner>/<repo_name>/releases/download/0.5.5-rc.2/kubecom_0.5.5-rc.2_linux_amd64.tar.gz", :using => CurlDownloadStrategy.
-      sha256 "de4c88f81173bd818e1962b469bc6eb810b108f2e5f6a772782b3be3c4215bf9"
+      url "https://github.com/<repo_owner>/<repo_name>/releases/download/0.5.5-rc.2/kubecom_0.5.5-rc.2_linux_amd64.tar.gz"
+      sha256 "89b250a556e4f78fc0e7aa6dd85879e080954ce5f7a1eb7dd01d95a3eab22e6b"
     end
   end
   
