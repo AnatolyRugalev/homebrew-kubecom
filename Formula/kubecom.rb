@@ -7,11 +7,11 @@ class Kubecom < Formula
 
   if OS.mac?
     url "https://github.com/<repo_owner>/<repo_name>/releases/download/0.5.5-rc.2/kubecom_0.5.5-rc.2_darwin_amd64.tar.gz", :using => CurlDownloadStrategy.
-    sha256 "d3bbc65280d2ea9e954e0e82993b07294176971d8537f11f67a3480af9c1bc3c"
+    sha256 "f9bb25d27360eb59bf129c13fae8a73a3545067198305e7d74cddc4aabc62179"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/<repo_owner>/<repo_name>/releases/download/0.5.5-rc.2/kubecom_0.5.5-rc.2_linux_amd64.tar.gz", :using => CurlDownloadStrategy.
-      sha256 "4aa271dc845e6c721b88d8ef586dd512a135d9b22d6c0914a9e19a2a34a3df89"
+      sha256 "de4c88f81173bd818e1962b469bc6eb810b108f2e5f6a772782b3be3c4215bf9"
     end
   end
   
