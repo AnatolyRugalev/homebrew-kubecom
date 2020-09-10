@@ -2,16 +2,16 @@
 class Kubecom < Formula
   desc "kubecom is terminal UI for easy interaction with Kubernetes"
   homepage "https://github.com/AnatolyRugalev/kube-commander"
-  version "0.6.1"
+  version "0.6.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/AnatolyRugalev/kube-commander/releases/download/0.6.1/kubecom_0.6.1_darwin_amd64.tar.gz"
-    sha256 "454170958744bb571fcc22c7c4bea08378b35e88f62dab8bea17f43d26440f37"
+    url "https://github.com/AnatolyRugalev/kube-commander/releases/download/0.6.2/kubecom_0.6.2_darwin_amd64.tar.gz"
+    sha256 "8a7e0ca09f8963efc734c492394adef1e47feaada2986a68ec119efe97854e78"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/AnatolyRugalev/kube-commander/releases/download/0.6.1/kubecom_0.6.1_linux_amd64.tar.gz"
-      sha256 "31aeda8d28dd9581a1c7df6e1de4ffb45502f7eca4eee99f50d1d61d9b4a11cf"
+      url "https://github.com/AnatolyRugalev/kube-commander/releases/download/0.6.2/kubecom_0.6.2_linux_amd64.tar.gz"
+      sha256 "2632eb09e5dbad6e6e4af791d53fc0b2f01786ed2f5a8b29ad1d6984b610a17a"
     end
   end
   
